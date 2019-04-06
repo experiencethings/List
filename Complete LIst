@@ -1,0 +1,347 @@
+print("HELLO, WELCOME")
+print("Select a list from following content:-")
+print("1. FRUITS\n2. VEGETABLES\n3. CAR BRANDS\n4. MOTORCYCLE BRANDS\n5. MOBILEPHONE BRANDS  ")
+a=int(input("Enter a no.:"))
+if (a==1):
+    fruits=['Apple','Mango','Grape']
+    print(fruits)
+    print("Select an option ")
+    print("1. Edit List\n2. Select items from the list")
+    b=int(input("Enter a no.:" ))
+    if (b==1):
+        print("TO EDIT LIST YOU HAVE TO FIRST CONFIRM YOUR IDENTITY")
+       
+        while True:
+             x=str(input("Enter your name:"))
+             y=str(input("Enter your password:"))
+
+             if (x=="Anubhav Jain" and y=="anubhav123"):
+                 print("Welcome Anubhav, excess granted")
+                 print("Select an option:")
+                 print("1. Add an item\n2. Remove an item ")
+                 c=int(input("Enter a no.:"))
+                 if (c==1):
+                     AddFruits=['apple', 'apricot avocado','banana','blackberry','blackcurrant','blueberry','boysenberry','cherry','coconut','fig','grape','grapefruit','kiwifruit','lemon','lime','lychee','mandarin','mango','melon','nectarine','orange','papaya','passion fruit','peach','pear','pineapple','plum','pomegranate','quince','raspberry','strawberry','watermelon','apple', 'Apricot Avocado','Banana','Blackberry','Blackcurrant','Blueberry','Boysenberry','Cherry','Coconut','Fig','Grape','Grapefruit','Kiwifruit','Lemon','Lime','Lychee','Mandarin','Mango','Melon','Nectarine','Orange','Papaya','Passion Fruit','Peach','Pear','Pineapple','Plum','Pomegranate','Quince','Raspberry','Strawberry','Watermelon']
+                     d=str(input("Enter the fruit you want to add:"))
+                     if d in AddFruits:
+                         if(d=='Apple' or d=='Mango' or d=='Grape' or d=='apple' or d=='mango' or d=='grape'):
+                             print("This item is already in the list")
+                         else:
+                             (fruits.append(d))
+                             (fruits.sort())
+                             print(fruits)
+                     else:
+                         print("This item cannot be added in this list")
+                         
+                 elif(c==2):
+                     e=str(input("Enter the item:"))
+                     if e in fruits:
+                         (fruits.remove(e))
+                         (fruits.sort())
+                         print(fruits)
+                     else:
+                         print("wrong item selected")
+                     
+                     
+                 
+                 break
+
+             elif (x!="Anubhav Jain" and y=="anubhav123"):
+                 print("your name might not be correct, please try again")
+                 continue
+
+             elif (x=="Anubhav Jain" and y!="anubhav123"):
+                 print("your password is incorrect, please try again")
+                 continue
+
+             else:
+                 print("incorrect name or password")
+                 continue
+      
+    elif(b==2):
+        f=str(input("Enter the fruit you want to select:"))
+        if(f=="Apple"):
+            print(Fruits[0])
+        elif(f=="Mango"):
+            print(Fruits[1])
+        elif(f=="Grape"):
+            print(Fruits[2])
+        else:
+            print("Item is not in the list")
+            
+elif (a==2):
+    Vegetables=['Tomato','Potato','Onion']
+    print(Vegetables)
+    print("Select an option ")
+    print("1. Edit List\n2. Select items from the list")
+    g=int(input("Enter a no.:" ))
+    if (g==1):
+        print("TO EDIT LIST YOU HAVE TO FIRST CONFIRM YOUR IDENTITY")
+       
+        while True:
+             x=str(input("Enter your name:"))
+             y=str(input("Enter your password:"))
+
+             if (x=="Anubhav Jain" and y=="anubhav123"):
+                 print("Welcome Anubhav, excess granted")
+                 print("Select an option:")
+                 print("1. Add an item\n2. Remove an item ")
+                 h=int(input("Enter a no.:"))
+                 if (h==1):
+                     Add_Vegetables=['artichoke','aubergine','amrud','asparagus','legumes','alfalfa sprouts','azuki beans','bean sprouts','black beans','black-eyed peas','borlotti bean','broad beans','chickpeas', 'garbanzos','ceci beans','green beans','kidney beans','lentils','lima beans', 'Butter bean','mung beans','navy beans','pinto beans','runner beans','split peas','soy beans','peas','mangetout','snap peas','broccoflower','broccoli','brussels sprouts','cabbage','kohlrabi','cauliflower','celery','endive','fiddleheads','frisee','fennel','greens','beet greens','bok choy','chard','collard greens','kale','mustard greens','spinach','quinoa','herbs','spices','anise','basil','caraway','cilantro','coriander','chamomile','dill','fennel','lavender','lemon Grass','marjoram','oregano','parsley','rosemary','sage','thyme','lettuce','arugula','mushrooms','nettles','New Zealand spinach','okra','onions','Chives','Garlic','Leek','onion','shallot','scallion','parsley','peppers','bell pepper','chili pepper','Jalapeño','Habanero','Paprika','Tabasco pepper','Cayenne pepper','radicchio','rhubarb','root vegetables','beetroot','mangel','carrot','celeriac','daikon','ginger','parsnip','rutabaga','turnip','radish','wasabi','horseradish','white radish','salsify','skirret','sweetcorn','topinambur','squashes','acorn squash','bitter melon','butternut squash','banana squash','courgette','Zucchini','cucumber','delicata','gem squash','hubbard squash','marrow','Squash','patty pans','pumpkin','spaghetti squash','tat soi','tomato','tubers','jicama','jerusalem artichoke','potato','quandong','sunchokes','sweet potato','taro','yam','water chestnut','watercress','cucumber','Artichoke','Aubergine','Amrud','Asparagus','Legumes','Alfalfa Sprouts','Azuki Beans','Bean Sprouts','Black Beans','Black-Eyed Peas','Borlotti Bean','Broad Beans','Chickpeas', 'Garbanzos','Ceci Beans','Green Beans','Kidney Beans','Lentils','Lima Beans', 'Butter Bean','Mung Beans','Navy Beans','Pinto Beans','Runner Beans','Split Peas','Soy Beans','Peas','Mangetout','Snap Peas','Broccoflower','Broccoli','Brussels Sprouts','Cabbage','Kohlrabi','Cauliflower','Celery','Endive','Fiddleheads','Frisee','Fennel','Greens','Beet Greens','Bok Choy','Chard','Collard Greens','Kale','Mustard Greens','Spinach','Quinoa','Herbs','Spices','Anise','Basil','Caraway','Cilantro','Coriander','Chamomile','Dill','Fennel','Lavender','Lemon Grass','Marjoram','Oregano','Parsley','Rosemary','Sage','Thyme','Lettuce','Arugula','Mushrooms','Nettles','New Zealand Spinach','Okra','Onions','Chives','Garlic','Leek','Onion','Shallot','Scallion','Parsley','Peppers','Bell Pepper','Chili Pepper','Jalapeño','Habanero','Paprika','Tabasco Pepper','Cayenne Pepper','Radicchio','Rhubarb','Root Vegetables','Beetroot','Mangel','Carrot','Celeriac','Daikon','Ginger','Parsnip','Rutabaga','Turnip','Radish','Wasabi','Horseradish','White Radish','Salsify','Skirret','Sweetcorn','Topinambur','Squashes','Acorn Squash','Bitter Melon','Butternut Squash','Banana Squash','Courgette','Zucchini','Cucumber','Delicata','Gem Squash','Hubbard Squash','Marrow','Squash','Patty Pans','Pumpkin','Spaghetti Squash','Tat Soi','Tomato','Tubers','Jicama','Jerusalem Artichoke','Potato','Quandong','Sunchokes','Sweet Potato','Taro','Yam','Water Chestnut','Watercress','Cucumber']
+                     i=str(input("Enter the vegetable you want to add:"))
+                     if i in Add_Vegetables:
+                         if(i=='Tomato' or i=='Potato' or i=='Onion' or i=='onion' or i=='tomato' or i=='potato'):
+                             print("This item is already in the list")
+                         else:
+                             (Vegetables.append(i))
+                             Vegetables.sort()
+                             print(Vegetables)
+                     else:
+                         print("This item cannot be added in this list")
+                         
+                 elif(h==2):
+                     
+                     j=str(input("Enter the vegetable:"))
+                     if j in Vegetables:
+                         (Vegetables.remove(j))
+                         (Vegetables.sort())
+                         print(Vegetables)
+                     else:
+                         print("Wrong item is selected")
+                     
+                 
+                 break
+
+             elif (x!="Anubhav Jain" and y=="anubhav123"):
+                 print("your name might not be correct, please try again")
+                 continue
+
+             elif (x=="Anubhav Jain" and y!="anubhav123"):
+                 print("your password is incorrect, please try again")
+                 continue
+
+             else:
+                 print("incorrect name or password")
+                 continue
+      
+    elif(g==2):
+        f=str(input("Enter the vegetable you want to select:"))
+        if(f=="Tomato"):
+            print(Vegetables[0])
+        elif(f=="Potato"):
+            print(Vegetables[1])
+        elif(f=="Onion"):
+            print(Vegetables[2])
+        else:
+            print("Item is not in the list")
+    
+elif (a==3):
+    Cars=['Audi','BMW','Ford']
+    print(Cars)
+    print("Select an option ")
+    print("1. Edit List\n2. Select items from the list")
+    b=int(input("Enter a no.:" ))
+    if (b==1):
+        print("TO EDIT LIST YOU HAVE TO FIRST CONFIRM YOUR IDENTITY")
+       
+        while True:
+             x=str(input("Enter your name:"))
+             y=str(input("Enter your password:"))
+
+             if (x=="Anubhav Jain" and y=="anubhav123"):
+                 print("Welcome Anubhav, excess granted")
+                 print("Select an option:")
+                 print("1. Add an item ")
+                 print("2. Remove an item ")
+                 c=int(input("Enter a no.:"))
+                 if (c==1):
+                     Add_Brands=['Acura','Alfa Romeo','Aston Martin','Audi','Bentley','BMW','Bugatti','Buick','Cadillac','Chevrolet','Chrysler','Citroen','Dodge','Ferrari','Fiat','Ford','Geely','General Motors','GMC','Honda','Hyundai','Infiniti','Jaguar','Jeep','Kia','Koenigsegg','Lamborghini','Land Rover','Lexus','Maserati','Mazda','McLaren','Mercedes-Benz','Mini','Mitsubishi','Nissan','Pagani','Peugeot','Porsche','Ram','Renault','Rolls Royce','Saab','Subaru','Suzuki','TATA Motors','Tesla','Toyota','Volkswagen','Volvo','acura','alfa romeo','aston martin','audi','bentley','bmw','bugatti','buick','cadillac','chevrolet','chrysler','citroen','dodge','ferrari','fiat','ford','geely','general motors','gmc','honda','hyundai','infiniti','jaguar','jeep','kia','koenigsegg','lamborghini','land rover','lexus','maserati','mazda','mclaren','mercedes-benz','mini','mitsubishi','nissan','pagani','peugeot','porsche','ram','renault','rolls royce','saab','subaru','suzuki','tata motors','tesla','toyota','volkswagen','volvo']
+                     d=str(input("Enter the Car you want to add:"))
+                     if d in Add_Brands:
+                         if(d=='Audi' or d=='audi' or d=='BMW' or d=='bmw' or d=='Ford' or d=='ford' ):
+                             print("This item is already in the list")
+                         else:
+                             Cars.append(d)
+                             Cars.sort()
+                             print(Cars)
+                     else:
+                         print("This item cannot be added in this list")
+                         
+                 elif(c==2):
+                     
+                     e=str(input("Enter the item:"))
+                     if e in Cars:
+                         (Cars.remove(e))
+                         Cars.sort()
+                         print(Cars)
+                     else:
+                         print("Wrong item is selected")
+                     
+                 
+                 break
+
+             elif (x!="Anubhav Jain" and y=="anubhav123"):
+                 print("your name might not be correct, please try again")
+                 continue
+
+             elif (x=="Anubhav Jain" and y!="anubhav123"):
+                 print("your password is incorrect, please try again")
+                 continue
+
+             else:
+                 print("incorrect name or password")
+                 continue
+      
+    elif(b==2):
+        f=str(input("Enter the car brand you want to select:"))
+        if(f=="Audi"):
+            print(Cars[0])
+        elif(f=="BMW"):
+            print(Cars[1])
+        elif(f=="Ford"):
+            print(Cars[2])
+        else:
+            print("Item is not in the list")
+    
+elif (a==4):
+    Bikes=['Ducati','BMW','Suzuki']
+    print(Bikes)
+    print("Select an option ")
+    print("1. Edit List")
+    print("2. Select items from the list")
+    b=int(input("Enter a no.:" ))
+    if (b==1):
+        print("TO EDIT LIST YOU HAVE TO FIRST CONFIRM YOUR IDENTITY")
+       
+        while True:
+             x=str(input("Enter your name:"))
+             y=str(input("Enter your password:"))
+
+             if (x=="Anubhav Jain" and y=="anubhav123"):
+                 print("Welcome Anubhav, excess granted")
+                 print("Select an option:")
+                 print("1. Add an item ")
+                 print("2. Remove an item ")
+                 c=int(input("Enter a no.:"))
+                 if (c==1):
+                     Add_Bikes=['Ducati','Triumph','Yamaha','Honda','BMW','Kawasaki','Aprilia','Harley-Davidson','KTM','MV Agusta','Suzuki','Royal Enfield','Moto Guzzi','Benelli','Indian Motocycle','Norton','Bajaj Auto','Cagiva','Victory','Bimota','Hero Motorcorp','Husqvarna','Hyosung','Arctic Cat Inc.','Kymco','Audi','Blata','Maico','Adler','Gilera','Sunbeam','Buell','Piaggio','Moto Morini','Sym','Dodge','Gasgas','JATTS','Runner','Cycles Peugeot','CCM','Rieju','Motorhispania','Derbi','ducati','triumph','yamaha','honda','bmw','kawasaki','aprilia','harley-davidson','ktm','mv agusta','suzuki','royal enfield','moto guzzi','benelli','indian motocycle','norton','bajaj auto','cagiva','victory','bimota','hero motorcorp','husqvarna','hyosung','arctic cat inc.','kymco','audi','blata','maico','adler','gilera','sunbeam','buell','piaggio','moto morini','sym','dodge','gasgas','jatts','runner','cycles peugeot','ccm','rieju','motorhispania','derbi']
+                     d=str(input("Enter the bike brand you want to add:"))
+                     if d in Add_Bikes:
+                         if(d=='Ducati' or d=='ducati' or d=='BMW' or d=='bmw' or d=='Suzuki' or d=='suzuki'):
+                             print("This item is already in the list")
+                             
+                         else:
+                             (Bikes.append(d))
+                             Bikes.sort()
+                             print(Bikes)
+                             
+                     else:
+                         print("This item cannot be added in this list")
+                     
+                         
+                 elif(c==2):
+                     
+                     e=str(input("Enter the motorcycle brand:"))
+                     if e in Bikes:
+                         (Bikes.remove(e))
+                         Bikes.sort()
+                         print(Bikes)
+                     else:
+                         print("wrong item is selected")
+                 
+                 break
+
+             elif (x!="Anubhav Jain" and y=="anubhav123"):
+                 print("your name might not be correct, please try again")
+                 continue
+
+             elif (x=="Anubhav Jain" and y!="anubhav123"):
+                 print("your password is incorrect, please try again")
+                 continue
+
+             else:
+                 print("incorrect name or password")
+                 continue
+      
+    elif(b==2):
+        f=str(input("Enter the motorcycle brand you want to select:"))
+        if(f=="Ducati"):
+            print(Bikes[0])
+        elif(f=="BMW"):
+            print(Bikes[1])
+        elif(f=="Suzuki"):
+            print(Bikes[2])
+        else:
+            print("Item is not in the list")
+
+elif (a==5):
+    Mobile_phones=['Apple','Oneplus','Sony']
+    print(Mobile_phones)
+    print("Select an option ")
+    print("1. Edit List")
+    print("2. Select items from the list")
+    b=int(input("Enter a no.:" ))
+    if (b==1):
+        print("TO EDIT LIST YOU HAVE TO FIRST CONFIRM YOUR IDENTITY")
+       
+        while True:
+             x=str(input("Enter your name:"))
+             y=str(input("Enter your password:"))
+
+             if (x=="Anubhav Jain" and y=="anubhav123"):
+                 print("Welcome Anubhav, excess granted")
+                 print("Select an option:")
+                 print("1. Add an item ")
+                 print("2. Remove an item ")
+                 c=int(input("Enter a no.:"))
+                 if (c==1):
+                     Add_Mobiles=['Xiaomi','Samsung','Vivo','Nokia','Oppo','Lenovo','Sony','Honor','HTC','Apple','Motorola','Gionee','Micromax','Lava','Coolpad','Itel','Panasonic','LYF','Asus','Huawei','LG','Moto','Google','Oneplus','Infocus','Blackberry','Intex','Karbonn','Jivi','Tecno','Infinix','Ulefone','Ivoomi','ZTE','XOLO','Swipe','Nubia','Yu','Meizu','Spice','Zen','Doogee','Elephone','Videocon','Microsoft','Celkon','Sansui','Zopo','I Ball','I Kall','Philips','Vernee','Lemon','Hi-Tech','Idea','Oukitel','Kodak','Acer','RealMe','Reliance','Smartron','Ziox','Reach','Chilli','Umi','Kechao','Good One','Gfive','Cat','Blu','Kult','Sharp','Alcatel','Trio','Mtech','Forme','Onida','Hyundai','Kenxinda','Ismart','Maxx','Okwu','Hi-Tech','Fly','Tcl','M-Horse','Vox','Rage','Yota','MPhone','Obi','Adcom','Aqua','Hyve','Essential','Salora','Archos','Hsl','Xillion','ChaMPion','Mts','Phonemax','Nuvo','Josh','Tp-Link','White Cherry','Wileyfox','Ringing Bells','xiaomi','samsung','vivo','nokia','oppo','lenovo','sony','honor','hTC','apple','motorola','gionee','micromax','lava','coolpad','itel','panasonic','lyf','asus','huawei','lg','moto','google','oneplus','infocus','blackberry','intex','karbonn','jivi','tecno','infinix','ulefone','ivoomi','zte','xolo','swipe','nubia','yu','meizu','spice','zen','doogee','elephone','videocon','microsoft','celkon','sansui','zopo','i ball','i kall','philips','vernee','lemon','hi-tech','idea','oukitel','kodak','acer','realme','reliance','smartron','ziox','reach','chilli','umi','kechao','good one','gfive','cat','blu','kult','sharp','alcatel','trio','mtech','forme','onida','hyundai','kenxinda','ismart','maxx','okwu','hi-tech','fly','tcl','m-horse','vox','rage','yota','mphone','obi','adcom','aqua','hyve','essential','salora','archos','hsl','xillion','champion','mts','phonemax','nuvo','josh','tp-link','white cherry','wileyfox','ringing bells']
+                     d=str(input("Enter the item you want to add:"))
+                     if d in Add_Mobiles:
+                         if(d=='Apple' or d=='apple' or d=='oneplus' or d=='Oneplus' or d=='Sony' or d=='sony'):
+                             print("This item is already in the list")
+                         else:
+                             (Mobile_phones.append(d))
+                             (Mobile_phones.sort())
+                             print(Mobile_phones)
+                     else:
+                         print("This item cannot be added in this list")
+                         
+                 elif(c==2):
+                     e=str(input("Enter the item:"))
+                     if e in Mobile_phones:
+                         (Mobile_phones.remove('One Plus'))
+                         (Mobile_phones.sort())
+                         print(Mobile_phones)
+                     else:
+                         print("Wrong item is selected")
+                     
+                 
+                 break
+
+             elif (x!="Anubhav Jain" and y=="anubhav123"):
+                 print("your name might not be correct, please try again")
+                 continue
+
+             elif (x=="Anubhav Jain" and y!="anubhav123"):
+                 print("your password is incorrect, please try again")
+                 continue
+
+             else:
+                 print("incorrect name or password")
+                 continue
+      
+    elif(b==2):
+        f=str(input("Enter the mobilephone brand you want to select:"))
+        if(f=="Apple"):
+            print(Mobile_phones[0])
+        elif(f=="Oneplus"):
+            print(Mobile_phones[1])
+        elif(f=="Sony"):
+            print(Mobile_phones[2])
+        else:
+            print("Item is not in the list")
+            
+else:
+    print("Incorrect Number")
